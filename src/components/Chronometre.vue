@@ -1,14 +1,15 @@
 <template>
   <div>
     <p>
-      <span class="minute">{{minutes}}</span>
+      <span id="minute">{{minutes}}</span>
       :
-      <span class="seconde">{{seconds}}</span>
+      <span id="seconde">{{seconds}}</span>
     </p>
   </div>
   <input
     type="button"
     value="start"
+    id="btn-start"
     v-on:click="changeEtat('start')"
   />
   <input
