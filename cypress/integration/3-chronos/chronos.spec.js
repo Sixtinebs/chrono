@@ -9,6 +9,6 @@ describe("Est-ce que le chrono marche bien ?",() => {
     it("Start the chronos", () => {
         cy.visit("/");
         cy.get('#btn-start').click();
-        cy.get('#seconde')
+        cy.get('#seconde').should('not.have.value', '0');
     })
 })
